@@ -1,0 +1,36 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body default styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button default */
+button {
+  font-family: inherit;
+}
+
+/* Remove list bullets globally (optional) */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Smooth font rendering */
+html {
+  scroll-behavior: smooth;
+}
