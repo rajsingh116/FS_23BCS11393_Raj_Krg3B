@@ -1,0 +1,56 @@
+package com.healthHub.dto;
+
+import lombok.Data;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class AppointmentRequest {
+
+    private Long patientId;
+    private Long doctorId;
+    private LocalDate date;
+
+    private Long amount; // in INR (e.g. 500)
+    private String paymentIntentId; // ✅ exact match;
+
+    public Long getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(Long patientId) {
+        this.patientId = patientId;
+    }
+
+    public Long getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(Long doctorId) {
+        this.doctorId = doctorId;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public Long getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Long amount) {
+        this.amount = amount;
+    }
+
+    public String getPaymentIntentId() {
+        return paymentIntentId;
+    }
+
+    public void setPaymentIntentId(String paymentIntentId) {
+        this.paymentIntentId = paymentIntentId;
+    }
+}
